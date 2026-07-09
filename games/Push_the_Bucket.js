@@ -1,3 +1,11 @@
+/*
+@title: Push the Bucket
+@author: KowKow
+@description: This game is all about pushing buckets and save some water from a leaking pipe. And there is a 120 second timer so water doesnt flood ur screen!
+@tags: Puzzle
+@addedOn: 2026-7-09
+*/
+
 const player = "p";
 const bucket = "b";
 const waterleak = "g";
