@@ -2,7 +2,7 @@
 @title: Push the Bucket
 @author: KowKow
 @description: This game is all about pushing buckets and save some water from a leaking pipe. And there is a 120 second timer so water doesnt flood ur screen!
-@tags: Puzzle
+@tags:['Puzzle']
 @addedOn: 2026-7-09
 */
 
@@ -413,20 +413,20 @@ onInput("j", () => {
 
 const conveyor = setInterval(() => {
 
-  let p = getFirst(player);
+   let p = getFirst(player);
 
-  if (tilesWith(rightBelt, player).length) p.x++;
-  if (tilesWith(leftBelt, player).length) p.x--;
-  if (tilesWith(upBelt, player).length) p.y--;
-  if (tilesWith(downBelt, player).length) p.y++;
+   if (tilesWith(rightBelt, player).length) p.x++;
+   if (tilesWith(leftBelt, player).length) p.x--;
+   if (tilesWith(upBelt, player).length) p.y--;
+   if (tilesWith(downBelt, player).length) p.y++;
 
-  let b = getFirst(bucket);
+   let b = getFirst(bucket);
 
-  if (b) {
-    if (tilesWith(rightBelt, bucket).length) b.x++;
-    if (tilesWith(leftBelt, bucket).length) b.x--;
-    if (tilesWith(upBelt, bucket).length) b.y--;
-    if (tilesWith(downBelt, bucket).y) b.y++;
-  }
+   if (b) {
+     if (tilesWith(rightBelt, bucket).length) b.x++;
+     if (tilesWith(leftBelt, bucket).length) b.x--;
+     if (tilesWith(upBelt, bucket).length) b.y--;
+     if (tilesWith(downBelt, bucket).length) b.y++;
+   }
 
-}, 300);
+ }, 300);
